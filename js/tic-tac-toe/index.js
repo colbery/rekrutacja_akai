@@ -31,10 +31,90 @@ function displayTurn(turn) {
 
 function checkWin() {
   // 2. sprawdź czy któryś z graczy wygrał pojedynek - jeśli tak wyświetla komunikat (możesz użyć np. funkcji "alert(...)")
+  if (symbols[0][0] !== "" && symbols[1][1] !== "" && symbols[2][2] !== "") {
+    if (symbols[0][0] === symbols[1][1] && symbols[1][1] === symbols[2][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+  if (symbols[2][0] !== "" && symbols[1][1] !== "" && symbols[0][2] !== "") {
+    if (symbols[2][0] === symbols[1][1] && symbols[1][1] === symbols[0][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+  if (symbols[0][0] !== "" && symbols[0][1] !== "" && symbols[0][2] !== "") {
+    if (symbols[0][0] === symbols[0][1] && symbols[0][1] === symbols[0][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+  if (symbols[1][0] !== "" && symbols[1][1] !== "" && symbols[1][2] !== "") {
+    if (symbols[1][0] === symbols[1][1] && symbols[1][1] === symbols[1][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+  if (symbols[2][0] !== "" && symbols[2][1] !== "" && symbols[2][2] !== "") {
+    if (symbols[2][0] === symbols[2][1] && symbols[2][1] === symbols[2][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+
+  if (symbols[0][0] !== "" && symbols[1][0] !== "" && symbols[2][0] !== "") {
+    if (symbols[0][0] === symbols[1][0] && symbols[1][0] === symbols[2][0]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+
+  if (symbols[0][1] !== "" && symbols[1][1] !== "" && symbols[2][1] !== "") {
+    if (symbols[0][1] === symbols[1][1] && symbols[1][1] === symbols[2][1]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
+
+  if (symbols[0][2] !== "" && symbols[1][2] !== "" && symbols[2][2] !== "") {
+    if (symbols[0][2] === symbols[1][2] && symbols[1][2] === symbols[2][2]) {
+      if (turn === "x") {
+        alert("O player won ");
+      } else {
+        alert("X player won");
+      }
+    }
+  }
 }
 
 // 3. dodaj listener pod przycisk z napisaem "reset" tak, aby po jego kliknięciu wywołać funkcję reset
+document.querySelector(".reset").addEventListener("click", reset);
+
 function reset() {
-  // 4. zresetuj stan gry
-  console.log(symbols);
+  symbols = [
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+  ];
 }
