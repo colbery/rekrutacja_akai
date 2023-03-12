@@ -14,7 +14,7 @@ function renderPokemons(pokemons) {
   for (let i = 0; i <= 150; i++) {
     const pokemon = `<div class="pokemonCard ${pokemons[i].types[0]} ${
       pokemons[i].types[1] ? pokemons[i].types[1] : ""
-    }"><img src='${pokemons[i].image}'/> <p> ${pokemons[i].name}</p> <p> ${
+    }"><img src='${pokemons[i].image}'/><hr> <p> ${pokemons[i].name}</p> <p> ${
       pokemons[i].types
     }</p></div>`;
     pokemonsContainer.innerHTML += pokemon;
