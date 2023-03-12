@@ -20,7 +20,7 @@ function renderPokemons(pokemons) {
     pokemonsContainer.innerHTML += pokemon;
   }
 }
-
+renderPokemons(pokemons);
 // następnie wykonaj uzupełnioną metodę z tablicą pokemons, aby sprawdzić czy wszystko działa
 
 /*
