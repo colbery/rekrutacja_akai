@@ -112,9 +112,15 @@ function checkWin() {
 document.querySelector(".reset").addEventListener("click", reset);
 
 function reset() {
-  symbols = [
+  let symbols = [
     ["", "", ""],
     ["", "", ""],
     ["", "", ""],
   ];
+
+  document.querySelectorAll(".tile").forEach((tile) => {
+    tile.classList.remove("tile-x");
+    tile.classList.remove("tile-o");
+  });
+  displayTurn("x");
 }
