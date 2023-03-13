@@ -71,12 +71,89 @@ img:hover {
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
-.img. .pokemonCard.grass.poison {
+.pokemonCard.grass.poison {
   background: linear-gradient(var(--grass-color), var(--poison-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.grass.psychic {
+  background: linear-gradient(var(--grass-color), var(--psychic-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.water.poison {
+  background: linear-gradient(var(--water-color), var(--poison-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.ghost.poison {
+  background: linear-gradient(var(--ghost-color), var(--poison-color));
   animation: gradient 15s ease infinite;
 }
 .pokemonCard.poison.ground {
   background: linear-gradient(var(--poison-color), var(--ground-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.rock.ground {
+  background: linear-gradient(var(--rock-color), var(--ground-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.psychic.fairy {
+  background: linear-gradient(var(--psychic-color), var(--fairy-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.water.flying {
+  background: linear-gradient(var(--water-color), var(--flying-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.electric.flying {
+  background: linear-gradient(var(--electric-color), var(--flying-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.dragon.flying {
+  background: linear-gradient(var(--dragon-color), var(--flying-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.electric.steal {
+  background: linear-gradient(var(--electric-color), var(--steel-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.water.psychic {
+  background: linear-gradient(var(--water-color), var(--psychic-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.ice.psychic {
+  background: linear-gradient(var(--ice-color), var(--psychic-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.water.ice {
+  background: linear-gradient(var(--water-color), var(--ice-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.poison.flying {
+  background: linear-gradient(var(--poison-color), var(--flying-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.rock.ground {
+  background: linear-gradient(var(--rock-color), var(--ground-color));
+  animation: gradient 15s ease infinite;
+}
+
+.pokemonCard.rock.water {
+  background: linear-gradient(var(--rock-color), var(--water-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.bug.poison {
+  background: linear-gradient(var(--bug-color), var(--poison-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.bug.flying {
+  background: linear-gradient(var(--bug-color), var(--flying-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.bug.grass {
+  background: linear-gradient(var(--bug-color), var(--grass-color));
+  animation: gradient 15s ease infinite;
+}
+.pokemonCard.normal.fairy {
+  background: linear-gradient(var(--normal-color), var(--fairy-color));
   animation: gradient 15s ease infinite;
 }
 
@@ -91,6 +168,9 @@ img:hover {
 }
 .pokemonCard.ice.flying {
   background: linear-gradient(var(--rock-color), var(--flying-color));
+}
+.pokemonCard.water.fighting {
+  background: linear-gradient(var(--water-color), var(--fighting-color));
 }
 
 .pokemonCard.fire {
